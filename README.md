@@ -6,8 +6,8 @@ All given time intervals (by default 15 minutes), a randomly selected photo is s
 To change the time between changes of each **wallpaper**, just change the value of `sleep_duration` in the [config.conf](https://github.com/Tim-ats-d/A-journey-with-rms/blob/master/config.conf) file.
 Dont' forget to render your `main.py` executable before launch it (`chmod u+x main.py`).
 
-#### Demos
-
+#### Demonstration
+![demo](https://github.com/Tim-ats-d/A-journey-with-rms/blob/main/assets/demonstration.gif)
 
 ## Requirements
 * A plasma 5 desktop environment
