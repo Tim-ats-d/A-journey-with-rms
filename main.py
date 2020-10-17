@@ -23,6 +23,7 @@
 #
 
 import configparser
+import datetime
 import dbus
 import os
 import random
@@ -74,7 +75,7 @@ def main():
 
     while 1:
         selected_wallpaper_path =  os.path.join(stallman_images_path, image_selector(list_stallman_images))
-        print(selected_wallpaper_path)
+        print("%s: Current wallpaper at path %s" % (time.strftime("%X"), selected_wallpaper_path))
         plasma_shell.evaluateScript(path_formatter(selected_wallpaper_path))
         time.sleep(sleep_duration)
 
