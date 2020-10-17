@@ -7,13 +7,14 @@ To change the time between changes of each wallpaper, just change the value of `
 
 ## Requirements
 
+Requires :
 * A plasma 5 desktop environment
 * Python 3
 
 ## License
 
-* GNU General Public Licenses
+GNU General Public Licenses
 
 ## Contact me
 
-* Mail : tim.arnouts@protonmail.com
+Mail : tim.arnouts@protonmail.com
