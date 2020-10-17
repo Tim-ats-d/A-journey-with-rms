@@ -33,6 +33,11 @@ import time
 stallman_images_path = os.path.join(os.getcwd(), "img")
 list_stallman_images = os.listdir(stallman_images_path)
 
+def logging(path):
+    """Returns a logging message."""
+    return "%s: Current wallpaper at path %s" % (time.strftime("%X"), path)
+
+
 def settings_reader(parameter, configuration_file_path):
     """Returns the value of the parameter contained in "parameters" section of given .conf file. """
     config_file = os.path.join(os.getcwd(), configuration_file_path)
@@ -75,7 +80,7 @@ def main():
 
     while 1:
         selected_wallpaper_path =  os.path.join(stallman_images_path, image_selector(list_stallman_images))
-        print("%s: Current wallpaper at path %s" % (time.strftime("%X"), selected_wallpaper_path))
+        print(logging(selected_wallpaper_path))
         plasma_shell.evaluateScript(path_formatter(selected_wallpaper_path))
         time.sleep(sleep_duration)
 
