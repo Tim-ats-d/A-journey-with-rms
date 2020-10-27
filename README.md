@@ -7,7 +7,7 @@ To change the time between changes of each **wallpaper**, just change the value 
 Dont' forget to render your `main.py` executable before launch it (`chmod u+x main.py`).
 
 #### Demonstration
-![demo](https://github.com/Tim-ats-d/A-journey-with-rms/blob/main/assets/demonstration.gif)
+![demo](https://user-images.githubusercontent.com/59396366/97365368-db215f80-18a5-11eb-9c3c-60104f440170.gif)
 
 ## Requirements
 * A plasma 5 desktop environment
