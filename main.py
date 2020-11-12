@@ -40,7 +40,8 @@ def logging(path):
 
 def settings_reader(parameter, configuration_file_path):
     """Returns the value of the parameter contained in "parameters" section of given .conf file. """
-    config_file = os.path.join(os.getcwd(), configuration_file_path)
+    config_file = os.path.join(
+    os.getcwd(), configuration_file_path)
 
     settings = configparser.ConfigParser()
     settings.read(config_file)
@@ -74,12 +75,14 @@ def main():
 
     bus = dbus.SessionBus()
     plasma_shell = dbus.Interface(
-                                  bus.get_object("org.kde.plasmashell", "/PlasmaShell"),
-                                  dbus_interface="org.kde.PlasmaShell"
-                                 )
+                       bus.get_object("org.kde.plasmashell", "/PlasmaShell"),
+                       dbus_interface="org.kde.PlasmaShell"
+    )
 
     while 1:
-        selected_wallpaper_path =  os.path.join(stallman_images_path, image_selector(list_stallman_images))
+        selected_wallpaper_path =  os.path.join(
+                                       stallman_images_path,
+                                       image_selector(list_stallman_images))
         print(logging(selected_wallpaper_path))
         plasma_shell.evaluateScript(path_formatter(selected_wallpaper_path))
         time.sleep(sleep_duration)
