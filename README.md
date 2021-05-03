@@ -14,8 +14,5 @@ Dont' forget to render your `main.py` executable before launch it (`chmod u+x ma
 * Python 3
 
 ## License
-* GNU General Public Licenses
-
-## Contact me
-
-* Mail : tim.arnouts@protonmail.com
+* GNU General Public License
+Distributed under the *GPL-3.0 license*. See [license](license) for more information.
